@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            div.videos {
+                width:100%;
+                overflow:auto;
+            }
+            div.videos div{
+                width:50%;
+                float:left;
+            }
+            div.audios div{
+                width:50%;
+                float:left;
+            }
+        </style>
     </head>
+
     <body>
         <h1>Interactive Media Gallery</h1>
         <h3>Featured Video</h3>
         <br/>
         <h4>Video:"Epic Advernture"</h4>
         <p>Experience the thrill of an epic adventure with stunning visuals.</p>
-        <video width="400" controls>
-            <source src="mov_bbb.mp4" type="video/mp4">
-            Your browser does not support HTML video.
+        <video width="600" controls autoplay muted>
+            <source src="video1.mp4" type="video/mp4">
         </video>
         <br/>
         <hr/>
         <br/>
+        <h3>Video Playlist</h3>
+        <br/>
+        <div class="videos">
+            <div>
+                <h4>Video: "Discovering Nature"</h4>
+                <p>Takw a journey though mesmerizing landscape and wildlife.</p>
+                <video width="400" height="300" controls autoplay muted>
+                    <source src="video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div >
+                <h4>Video: "City Life"</h4>
+                <p>Explore the vibrant energy of a bustling city.</p>
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/-bz3vT4lODY?si=OPA8oCgJUFsGUlvF">
+                </iframe>
+            </div>
+
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <h3>Audio Playlist </h3>
+        <div class="audios">
+            <div>
+                <h4>Song: "Chil Vibes"</h4>
+                <p>Relax and unwind with this soothing and melodic tune</p>
+                <audio controls>
+                    <source src="audio1.mp3" type="audio/mpeg">
+                  </audio>
+            </div>
+            <div>
+                <h4>Song: "Upbeat Croove"</h4>
+                <p>Get energized with this lively and rhythmic track.</p>
+                <audio controls>
+                    <source src="audio1.mp3" type="audio/mpeg">
+                  </audio>
+            </div>
+
+        </div>
 
     </body>
 </html>
